@@ -7,23 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		535F18DCA7A0230EAEC1C6E7 /* Pods_Finetta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7D51819E5B90F6ADFFE5A0 /* Pods_Finetta.framework */; };
 		ED4948001FFA8F210014C662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4947FF1FFA8F210014C662 /* AppDelegate.swift */; };
-		ED4948021FFA8F210014C662 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4948011FFA8F210014C662 /* ViewController.swift */; };
-		ED4948051FFA8F210014C662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4948031FFA8F210014C662 /* Main.storyboard */; };
+		ED4948021FFA8F210014C662 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4948011FFA8F210014C662 /* LoginViewController.swift */; };
 		ED4948081FFA8F210014C662 /* Finetta.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ED4948061FFA8F210014C662 /* Finetta.xcdatamodeld */; };
 		ED49480A1FFA8F210014C662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4948091FFA8F210014C662 /* Assets.xcassets */; };
-		ED49480D1FFA8F210014C662 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED49480B1FFA8F210014C662 /* LaunchScreen.storyboard */; };
+		EDC9F1EE1FFA937F00612A2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EDC9F1ED1FFA937F00612A2A /* GoogleService-Info.plist */; };
+		EDC9F1F01FFA93EE00612A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4948031FFA8F210014C662 /* Main.storyboard */; };
+		EDC9F1F11FFA93F200612A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED49480B1FFA8F210014C662 /* LaunchScreen.storyboard */; };
+		EDC9F1F51FFA9F9400612A2A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9F1F41FFA9F9400612A2A /* RegistrationViewController.swift */; };
+		EDC9F1F81FFAA24800612A2A /* ViewItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9F1F71FFAA24800612A2A /* ViewItemsViewController.swift */; };
+		EDC9F1FB1FFAA4DB00612A2A /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDC9F1FA1FFAA4DB00612A2A /* SettingsTableViewController.swift */; };
+		EDFE460A1FFABBA8000DF65B /* VC+builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46091FFABBA8000DF65B /* VC+builder.swift */; };
+		EDFE460C1FFAC564000DF65B /* FirebaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460B1FFAC564000DF65B /* FirebaseInteractor.swift */; };
+		EDFE460E1FFAC5F1000DF65B /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460D1FFAC5F1000DF65B /* LoginInteractor.swift */; };
+		EDFE46101FFAC614000DF65B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460F1FFAC614000DF65B /* LoginRouter.swift */; };
+		EDFE46121FFAC7B8000DF65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46111FFAC7B8000DF65B /* LoginPresenter.swift */; };
+		EDFE46141FFAC7CB000DF65B /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46131FFAC7CB000DF65B /* LoginProtocols.swift */; };
+		EDFE46171FFB6619000DF65B /* ViewItemsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46161FFB6619000DF65B /* ViewItemsProtocols.swift */; };
+		EDFE46191FFB6741000DF65B /* ViewItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46181FFB6741000DF65B /* ViewItemsPresenter.swift */; };
+		EDFE461B1FFB674B000DF65B /* ViewItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE461A1FFB674B000DF65B /* ViewItemsInteractor.swift */; };
+		EDFE461D1FFB6759000DF65B /* ViewItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE461C1FFB6759000DF65B /* ViewItemsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0227553498CF9C646D51D86D /* Pods-Finetta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finetta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finetta/Pods-Finetta.release.xcconfig"; sourceTree = "<group>"; };
+		4E7D51819E5B90F6ADFFE5A0 /* Pods_Finetta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finetta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4947FC1FFA8F210014C662 /* Finetta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Finetta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4947FF1FFA8F210014C662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ED4948011FFA8F210014C662 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ED4948011FFA8F210014C662 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED4948041FFA8F210014C662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ED4948071FFA8F210014C662 /* Finetta.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Finetta.xcdatamodel; sourceTree = "<group>"; };
 		ED4948091FFA8F210014C662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED49480C1FFA8F210014C662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED49480E1FFA8F210014C662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDC9F1ED1FFA937F00612A2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EDC9F1F41FFA9F9400612A2A /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		EDC9F1F71FFAA24800612A2A /* ViewItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsViewController.swift; sourceTree = "<group>"; };
+		EDC9F1FA1FFAA4DB00612A2A /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		EDFE46091FFABBA8000DF65B /* VC+builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+builder.swift"; sourceTree = "<group>"; };
+		EDFE460B1FFAC564000DF65B /* FirebaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInteractor.swift; sourceTree = "<group>"; };
+		EDFE460D1FFAC5F1000DF65B /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		EDFE460F1FFAC614000DF65B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		EDFE46111FFAC7B8000DF65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		EDFE46131FFAC7CB000DF65B /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		EDFE46161FFB6619000DF65B /* ViewItemsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsProtocols.swift; sourceTree = "<group>"; };
+		EDFE46181FFB6741000DF65B /* ViewItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsPresenter.swift; sourceTree = "<group>"; };
+		EDFE461A1FFB674B000DF65B /* ViewItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsInteractor.swift; sourceTree = "<group>"; };
+		EDFE461C1FFB6759000DF65B /* ViewItemsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsRouter.swift; sourceTree = "<group>"; };
+		EFF83B3B731C94A1E130AAFB /* Pods-Finetta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finetta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Finetta/Pods-Finetta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +63,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				535F18DCA7A0230EAEC1C6E7 /* Pods_Finetta.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAA6A8C1D28F65C06D15B4E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E7D51819E5B90F6ADFFE5A0 /* Pods_Finetta.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E420DB1EE91EA9CC57673C60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EFF83B3B731C94A1E130AAFB /* Pods-Finetta.debug.xcconfig */,
+				0227553498CF9C646D51D86D /* Pods-Finetta.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		ED4947F31FFA8F210014C662 = {
 			isa = PBXGroup;
 			children = (
 				ED4947FE1FFA8F210014C662 /* Finetta */,
 				ED4947FD1FFA8F210014C662 /* Products */,
+				E420DB1EE91EA9CC57673C60 /* Pods */,
+				AAA6A8C1D28F65C06D15B4E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +109,92 @@
 			isa = PBXGroup;
 			children = (
 				ED4947FF1FFA8F210014C662 /* AppDelegate.swift */,
-				ED4948011FFA8F210014C662 /* ViewController.swift */,
+				EDC9F1F21FFA9F6000612A2A /* Login Scene */,
+				EDC9F1F31FFA9F7800612A2A /* Registration Scene */,
+				EDFE46151FFB6379000DF65B /* Main Scene */,
+				EDC9F1FC1FFAA56500612A2A /* Data Model */,
 				ED4948031FFA8F210014C662 /* Main.storyboard */,
-				ED4948091FFA8F210014C662 /* Assets.xcassets */,
-				ED49480B1FFA8F210014C662 /* LaunchScreen.storyboard */,
+				EDFE46081FFABB7D000DF65B /* Extensions */,
+				EDC9F1EF1FFA939A00612A2A /* Application */,
 				ED49480E1FFA8F210014C662 /* Info.plist */,
-				ED4948061FFA8F210014C662 /* Finetta.xcdatamodeld */,
+				EDC9F1ED1FFA937F00612A2A /* GoogleService-Info.plist */,
 			);
 			path = Finetta;
+			sourceTree = "<group>";
+		};
+		EDC9F1EF1FFA939A00612A2A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ED4948091FFA8F210014C662 /* Assets.xcassets */,
+				ED49480B1FFA8F210014C662 /* LaunchScreen.storyboard */,
+				ED4948061FFA8F210014C662 /* Finetta.xcdatamodeld */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EDC9F1F21FFA9F6000612A2A /* Login Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EDFE46131FFAC7CB000DF65B /* LoginProtocols.swift */,
+				EDFE460F1FFAC614000DF65B /* LoginRouter.swift */,
+				EDFE460D1FFAC5F1000DF65B /* LoginInteractor.swift */,
+				EDFE46111FFAC7B8000DF65B /* LoginPresenter.swift */,
+				ED4948011FFA8F210014C662 /* LoginViewController.swift */,
+			);
+			path = "Login Scene";
+			sourceTree = "<group>";
+		};
+		EDC9F1F31FFA9F7800612A2A /* Registration Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9F1F41FFA9F9400612A2A /* RegistrationViewController.swift */,
+			);
+			path = "Registration Scene";
+			sourceTree = "<group>";
+		};
+		EDC9F1F61FFA9FBF00612A2A /* View Items Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EDFE46161FFB6619000DF65B /* ViewItemsProtocols.swift */,
+				EDFE461C1FFB6759000DF65B /* ViewItemsRouter.swift */,
+				EDFE461A1FFB674B000DF65B /* ViewItemsInteractor.swift */,
+				EDFE46181FFB6741000DF65B /* ViewItemsPresenter.swift */,
+				EDC9F1F71FFAA24800612A2A /* ViewItemsViewController.swift */,
+			);
+			path = "View Items Scene";
+			sourceTree = "<group>";
+		};
+		EDC9F1F91FFAA2BA00612A2A /* Settings Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9F1FA1FFAA4DB00612A2A /* SettingsTableViewController.swift */,
+			);
+			path = "Settings Scene";
+			sourceTree = "<group>";
+		};
+		EDC9F1FC1FFAA56500612A2A /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDFE460B1FFAC564000DF65B /* FirebaseInteractor.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		EDFE46081FFABB7D000DF65B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EDFE46091FFABBA8000DF65B /* VC+builder.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EDFE46151FFB6379000DF65B /* Main Scene */ = {
+			isa = PBXGroup;
+			children = (
+				EDC9F1F61FFA9FBF00612A2A /* View Items Scene */,
+				EDC9F1F91FFAA2BA00612A2A /* Settings Scene */,
+			);
+			path = "Main Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ED4948111FFA8F210014C662 /* Build configuration list for PBXNativeTarget "Finetta" */;
 			buildPhases = (
+				84BD2C251A31F62A08235E9E /* [CP] Check Pods Manifest.lock */,
 				ED4947F81FFA8F210014C662 /* Sources */,
 				ED4947F91FFA8F210014C662 /* Frameworks */,
 				ED4947FA1FFA8F210014C662 /* Resources */,
+				6D32D00F115538A0AD0B4618 /* [CP] Embed Pods Frameworks */,
+				750E266DBD60C93220CC38F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,22 +259,96 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED49480D1FFA8F210014C662 /* LaunchScreen.storyboard in Resources */,
+				EDC9F1F11FFA93F200612A2A /* LaunchScreen.storyboard in Resources */,
+				EDC9F1F01FFA93EE00612A2A /* Main.storyboard in Resources */,
+				EDC9F1EE1FFA937F00612A2A /* GoogleService-Info.plist in Resources */,
 				ED49480A1FFA8F210014C662 /* Assets.xcassets in Resources */,
-				ED4948051FFA8F210014C662 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D32D00F115538A0AD0B4618 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Finetta/Pods-Finetta-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Finetta/Pods-Finetta-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		750E266DBD60C93220CC38F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Finetta/Pods-Finetta-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84BD2C251A31F62A08235E9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Finetta-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ED4947F81FFA8F210014C662 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4948021FFA8F210014C662 /* ViewController.swift in Sources */,
+				EDFE460E1FFAC5F1000DF65B /* LoginInteractor.swift in Sources */,
+				ED4948021FFA8F210014C662 /* LoginViewController.swift in Sources */,
 				ED4948081FFA8F210014C662 /* Finetta.xcdatamodeld in Sources */,
+				EDC9F1FB1FFAA4DB00612A2A /* SettingsTableViewController.swift in Sources */,
+				EDFE46121FFAC7B8000DF65B /* LoginPresenter.swift in Sources */,
+				EDC9F1F81FFAA24800612A2A /* ViewItemsViewController.swift in Sources */,
+				EDC9F1F51FFA9F9400612A2A /* RegistrationViewController.swift in Sources */,
 				ED4948001FFA8F210014C662 /* AppDelegate.swift in Sources */,
+				EDFE46191FFB6741000DF65B /* ViewItemsPresenter.swift in Sources */,
+				EDFE46171FFB6619000DF65B /* ViewItemsProtocols.swift in Sources */,
+				EDFE460A1FFABBA8000DF65B /* VC+builder.swift in Sources */,
+				EDFE46141FFAC7CB000DF65B /* LoginProtocols.swift in Sources */,
+				EDFE461B1FFB674B000DF65B /* ViewItemsInteractor.swift in Sources */,
+				EDFE46101FFAC614000DF65B /* LoginRouter.swift in Sources */,
+				EDFE461D1FFB6759000DF65B /* ViewItemsRouter.swift in Sources */,
+				EDFE460C1FFAC564000DF65B /* FirebaseInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +483,7 @@
 		};
 		ED4948121FFA8F210014C662 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFF83B3B731C94A1E130AAFB /* Pods-Finetta.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +499,7 @@
 		};
 		ED4948131FFA8F210014C662 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0227553498CF9C646D51D86D /* Pods-Finetta.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

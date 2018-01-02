@@ -1,0 +1,6 @@
+framework module Pods_Finetta {
+  umbrella header "Pods-Finetta-umbrella.h"
+
+  export *
+  module * { export * }
+}
