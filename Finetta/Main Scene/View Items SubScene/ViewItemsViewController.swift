@@ -10,12 +10,15 @@ import UIKit
 
 class ViewItemsTableViewController: UITableViewController {
     
-    var presenter: ViewPresenterInterfaceForViewProtocol?
+    var presenter: ViewItemsPresenterInferfaceForViewProtocol?
     
 }
 
-extension ViewItemsTableViewController: ViewViewInterfaceForPresenterProtocol {
+extension ViewItemsTableViewController: ViewItemsViewInterfaceForPresenterProtocol {
     
+    override func viewDidLoad() {
+        
+    }
     
     
 }

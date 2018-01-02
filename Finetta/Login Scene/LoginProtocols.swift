@@ -24,16 +24,16 @@ protocol LoginInteractorPropertyProtocol: class {
 
 //MARK: - Отношения Presenter'a и View
 
-//Реализует presenter
-protocol LoginPresenterInferfaceForViewProtocol: class, LoginPresenterPropertyProtocol {
+//Реализует presenter (здесь не нужно писать, что это классовый протокол, так как этот протокол уже наследует тот, который классовый)
+protocol LoginPresenterInferfaceForViewProtocol: LoginPresenterPropertyProtocol {
     
     //Спрашивает залогиниться
     func login(withEmail email: String, password: String)
     
 }
 
-//Реализует view
-protocol LoginViewInterfaceForPresenterProtocol: class, LoginViewPropertyProtocol {
+//Реализует view (здесь не нужно писать, что это классовый протокол, так как этот протокол уже наследует тот, который классовый)
+protocol LoginViewInterfaceForPresenterProtocol: LoginViewPropertyProtocol {
 
     func showErrorAlert(withErrorDescription description: String)
 }
@@ -41,34 +41,38 @@ protocol LoginViewInterfaceForPresenterProtocol: class, LoginViewPropertyProtoco
 
 //MARK: - Отношения Presenter'a и Interactor'a
 
-//Реализует presenter
-protocol LoginPresenterInterfaceForInteractorProtocol: class, LoginPresenterPropertyProtocol {
+//Реализует presenter (здесь не нужно писать, что это классовый протокол, так как этот протокол уже наследует тот, который классовый)
+protocol LoginPresenterInterfaceForInteractorProtocol: LoginPresenterPropertyProtocol {
     
     func authorizationSucceeded(name: String)
     func authorizationFailed(error: NSError)
     
 }
 
-//Реализует Interactor
-protocol LoginInteractorInterfaceForPresenterProtocol: class, LoginInteractorPropertyProtocol {
+//Реализует Interactor (здесь не нужно писать, что это классовый протокол, так как этот протокол уже наследует тот, который классовый)
+protocol LoginInteractorInterfaceForPresenterProtocol: LoginInteractorPropertyProtocol {
     
     //в этом методе должна быть непосредственная работа с Firebase
     func authorize(withEmail email: String, password: String)
+    
+    func getUser() -> User?
+    
+    
 }
 
 
 protocol LoginWireframeInterface: class {
     
     //Это свойство переоопределяется в каждом из методов типа create*Scene()
-    var currentViewController: UIViewController { get set }
+    unowned var currentViewController: UIViewController { get set }
     
     func createLoginScene() -> LoginViewController
     //func createRegistrationScene() -> RegistrationViewController
     
     //По-моему эти два метода придятся объединить, так как они оба состоят в tabbar controller'e и инициализируются одновременно
     
-    func createMainScene() -> UITabBarController
     
     func performSegue(withIdentifier identifier: String, towards viewController: UIViewController)
     
+    func presentMainScene()
 }

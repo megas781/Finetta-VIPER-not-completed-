@@ -39,6 +39,10 @@ class LoginInteractor: LoginInteractorInterfaceForPresenterProtocol {
         
     }
     
+    func getUser() -> User? {
+        return Auth.auth().currentUser
+    }
+    
     init() {
         print("login interactor init")
     }

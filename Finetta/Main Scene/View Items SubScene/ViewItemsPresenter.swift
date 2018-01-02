@@ -9,13 +9,15 @@
 import Foundation
 
 class ViewItemsPresenter {
-    var router: ViewItemsWireframeInterface?
-    var view: ViewViewInterfaceForPresenterProtocol?
+    var wireframe: ViewItemsWireframeInterface?
+    weak var view: ViewItemsViewInterfaceForPresenterProtocol?
     var interactor: ViewItemsInteractorInterfaceForPresenterProtocol?
 }
 
 
-extension ViewItemsPresenter: ViewPresenterInterfaceForViewProtocol {
+extension ViewItemsPresenter: ViewItemsPresenterInferfaceForViewProtocol {
+    
+    
      
     
     

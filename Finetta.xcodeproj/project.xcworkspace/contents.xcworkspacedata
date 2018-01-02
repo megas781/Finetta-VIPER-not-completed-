@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Finetta.xcodeproj">
+      location = "self:/Users/glebkalachev/Documents/workspace_xcode/Finetta/Finetta.xcodeproj">
    </FileRef>
 </Workspace>

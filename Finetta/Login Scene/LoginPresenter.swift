@@ -34,7 +34,8 @@ extension LoginPresenter: LoginPresenterInferfaceForViewProtocol {
 extension LoginPresenter: LoginPresenterInterfaceForInteractorProtocol {
     func authorizationSucceeded(name: String) {
         
-//        self.wireframe.
+        //Ебаное место. Когда я его напишу, стану MVP!
+        self.wireframe?.presentMainScene()
         
     }
     

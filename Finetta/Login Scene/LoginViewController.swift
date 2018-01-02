@@ -60,16 +60,26 @@ class LoginViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print("prepareForSegue works!!")
+        
+        switch segue.identifier! {
+        case "fromLoginToMainSegueIdentifier":
+            
+            let dvc = ((segue.destination as! UITabBarController).viewControllers![0] as! UINavigationController).topViewController as! ViewItemsTableViewController
+            
+            //супер сомнительная строка
+            dvc.title = self.presenter?.interactor?.getUser()?.email ?? "error occured"
+            
+            
+            
+        default:
+            fatalError("unexpected default case in prepareForSegue")
+        }
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         print("login view controller aDecoder init")
-    }
-    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
-        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        print("login view controller nib init")
     }
     
     deinit {

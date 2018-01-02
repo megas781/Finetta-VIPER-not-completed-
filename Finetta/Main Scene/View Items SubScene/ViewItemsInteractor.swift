@@ -10,7 +10,7 @@ import Foundation
 
 
 class ViewItemsInteractor {
-    var presenter: ViewItemsPresenterInterfaceForInteractorProtocol?
+    weak var presenter: ViewItemsPresenterInterfaceForInteractorProtocol?
 }
 
 extension ViewItemsInteractor: ViewItemsInteractorInterfaceForPresenterProtocol {

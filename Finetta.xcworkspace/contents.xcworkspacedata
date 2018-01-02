@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Finetta.xcodeproj">
+      location = "group:/Users/glebkalachev/Documents/workspace_xcode/Finetta/Finetta.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

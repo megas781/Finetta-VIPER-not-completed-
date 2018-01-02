@@ -11,7 +11,10 @@ import UIKit
 
 let mainStoryboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
 
+
 class LoginWireframe: LoginWireframeInterface {
+    
+    
     
     unowned var currentViewController: UIViewController
     
@@ -38,42 +41,14 @@ class LoginWireframe: LoginWireframeInterface {
         
     }
     
-    func createMainScene() -> UITabBarController {
-        
-        let theTabBarController = (mainStoryboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController)
-        
-        //First Stage - View Items scene
-        let view1 = (theTabBarController.viewControllers![0] as! UINavigationController).topViewController as! ViewItemsTableViewController
-        let presenter1 = ViewItemsPresenter.init()
-        let interactor1 = ViewItemsInteractor.init()
-        
-        presenter1.view = view1
-        view1.presenter = presenter1
-        presenter1.interactor = interactor1
-        interactor1.presenter = presenter1
-        presenter1.router = ViewItemsRouter.init()
-        
-        
-        self.currentViewController = view1
-        
-        return theTabBarController
-    }
-    
-    
-//    
-//    func showMainScene() {
-////        let segue = UIStoryboardSegue.init(identifier: "asdf", source: self.currentViewController, destination: self.createMainScene())
-////        segue.perform()
-//        
-//        
-//    }
-    
     
     func performSegue(withIdentifier identifier: String, towards viewController: UIViewController) {
-        let segue = UIStoryboardSegue.init(identifier: identifier, source: self.currentViewController, destination: self.createMainScene())
-        segue.perform()
+        
     }
     
+    func presentMainScene() {
+        self.currentViewController.performSegue(withIdentifier: "fromLoginToMainSegueIdentifier", sender: self.currentViewController)
+    }
     
     init() {
         print("login wireframe init")

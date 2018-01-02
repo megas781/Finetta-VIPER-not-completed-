@@ -104,6 +104,7 @@
                     <connections>
                         <outlet property="mailTextField" destination="NpL-i8-cOI" id="4F9-Cb-YOV"/>
                         <outlet property="passwordTextField" destination="7bW-uF-Z6P" id="Jox-pU-gf3"/>
+                        <segue destination="p8a-Ui-L8m" kind="show" identifier="fromLoginToMainSegueIdentifier" id="Hd7-9m-IQc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -319,6 +320,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KUq-Me-zHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-66" y="1490"/>
+        </scene>
+        <!--Mock View Controller-->
+        <scene sceneID="Vzn-fo-hyX">
+            <objects>
+                <viewController storyboardIdentifier="MockViewController" id="p6z-ps-qY2" customClass="MockViewController" customModule="Finetta" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fVK-lR-hYj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jk3-OG-l5B">
+                                <rect key="frame" x="148" y="318.5" width="79" height="30"/>
+                                <state key="normal" title="backButton"/>
+                                <connections>
+                                    <action selector="backButtonTapped:" destination="p6z-ps-qY2" eventType="touchUpInside" id="7or-26-bcj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jk3-OG-l5B" firstAttribute="centerY" secondItem="fVK-lR-hYj" secondAttribute="centerY" id="4gL-wY-QfG"/>
+                            <constraint firstItem="Jk3-OG-l5B" firstAttribute="centerX" secondItem="fVK-lR-hYj" secondAttribute="centerX" id="EG8-cb-mZk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hTC-QR-JtO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mla-T0-BCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-279.19999999999999" y="2333.8830584707648"/>
         </scene>
     </scenes>
 </document>
