@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		0227553498CF9C646D51D86D /* Pods-Finetta.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finetta.release.xcconfig"; path = "Pods/Target Support Files/Pods-Finetta/Pods-Finetta.release.xcconfig"; sourceTree = "<group>"; };
 		4E7D51819E5B90F6ADFFE5A0 /* Pods_Finetta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Finetta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED4947FC1FFA8F210014C662 /* Finetta Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finetta Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4947FC1FFA8F210014C662 /* Finetta VIPER Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finetta VIPER Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED4947FF1FFA8F210014C662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED4948011FFA8F210014C662 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ED4948041FFA8F210014C662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		ED4947FD1FFA8F210014C662 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ED4947FC1FFA8F210014C662 /* Finetta Viper.app */,
+				ED4947FC1FFA8F210014C662 /* Finetta VIPER Viper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ED4947FB1FFA8F210014C662 /* Finetta Viper */ = {
+		ED4947FB1FFA8F210014C662 /* Finetta VIPER Viper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ED4948111FFA8F210014C662 /* Build configuration list for PBXNativeTarget "Finetta Viper" */;
+			buildConfigurationList = ED4948111FFA8F210014C662 /* Build configuration list for PBXNativeTarget "Finetta VIPER Viper" */;
 			buildPhases = (
 				84BD2C251A31F62A08235E9E /* [CP] Check Pods Manifest.lock */,
 				ED4947F81FFA8F210014C662 /* Sources */,
@@ -230,9 +230,9 @@
 			);
 			dependencies = (
 			);
-			name = "Finetta Viper";
+			name = "Finetta VIPER Viper";
 			productName = Finetta;
-			productReference = ED4947FC1FFA8F210014C662 /* Finetta Viper.app */;
+			productReference = ED4947FC1FFA8F210014C662 /* Finetta VIPER Viper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -251,7 +251,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ED4947F71FFA8F210014C662 /* Build configuration list for PBXProject "Finetta" */;
+			buildConfigurationList = ED4947F71FFA8F210014C662 /* Build configuration list for PBXProject "Finetta VIPER" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -264,7 +264,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ED4947FB1FFA8F210014C662 /* Finetta Viper */,
+				ED4947FB1FFA8F210014C662 /* Finetta VIPER Viper */,
 			);
 		};
 /* End PBXProject section */
@@ -536,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ED4947F71FFA8F210014C662 /* Build configuration list for PBXProject "Finetta" */ = {
+		ED4947F71FFA8F210014C662 /* Build configuration list for PBXProject "Finetta VIPER" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED49480F1FFA8F210014C662 /* Debug */,
@@ -545,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ED4948111FFA8F210014C662 /* Build configuration list for PBXNativeTarget "Finetta Viper" */ = {
+		ED4948111FFA8F210014C662 /* Build configuration list for PBXNativeTarget "Finetta VIPER Viper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ED4948121FFA8F210014C662 /* Debug */,
