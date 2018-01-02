@@ -104,7 +104,6 @@
                     <connections>
                         <outlet property="mailTextField" destination="NpL-i8-cOI" id="4F9-Cb-YOV"/>
                         <outlet property="passwordTextField" destination="7bW-uF-Z6P" id="Jox-pU-gf3"/>
-                        <segue destination="Mqp-cn-9Ax" kind="show" identifier="fromRVCtoLVCsegueIdentifier" id="nQD-Ah-VeL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -9,16 +9,21 @@
 import Foundation
 
 
-class LoginPresenter {
+class LoginPresenter: LoginPresenterPropertyProtocol {
     
-    var router: LoginPresenterToRouterProtocol?
-    var interactor: LoginPresenterToInteractorProtocol?
-    var view: LoginPresenterToViewProtocol?
+    var wireframe: LoginWireframeInterface?
+    var interactor: LoginInteractorInterfaceForPresenterProtocol?
+    weak var view: LoginViewInterfaceForPresenterProtocol?
     
-    
+    init() {
+        print("login presenter init")
+    }
+    deinit {
+        print("login presenter deinit")
+    }
 }
 
-extension LoginPresenter: LoginViewToPresenterProtocol {
+extension LoginPresenter: LoginPresenterInferfaceForViewProtocol {
     
     func login(withEmail email: String, password: String) {
         self.interactor?.authorize(withEmail: email, password: password)
@@ -26,10 +31,11 @@ extension LoginPresenter: LoginViewToPresenterProtocol {
     
 }
 
-extension LoginPresenter: LoginInteractorToPresenterProtocol {
+extension LoginPresenter: LoginPresenterInterfaceForInteractorProtocol {
     func authorizationSucceeded(name: String) {
         
-        self.view?.showViewItemsViewController()
+//        self.wireframe.
+        
     }
     
     func authorizationFailed(error: NSError) {

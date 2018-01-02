@@ -1,5 +1,5 @@
 //
-//  ViewItemsRouter.swift
+//  SettingsProtocols.swift
 //  Finetta
 //
 //  Created by Gleb Kalachev on 1/2/18.
@@ -7,7 +7,3 @@
 //
 
 import Foundation
-
-class ViewItemsRouter: ViewItemsPresenterToRouterProtocol {
-    init() {}
-}

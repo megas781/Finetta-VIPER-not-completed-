@@ -17,16 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
         FirebaseApp.configure()
+        
+        
         
         window = UIWindow.init(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = LoginRouter.init().createLoginScene() 
-//         window?.rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "TabBarController") as! UITabBarController
+        
+        print("initialized a loginWireframe")
+        
+//        let loginWireframe = LoginWireframe.init()
+//        print(LoginWireframe.init().currentViewController)
+        
+//        print("loginWireframe was initialized")
         
         
+        
+        window?.rootViewController = LoginWireframe.init().currentViewController
         
         return true
     }

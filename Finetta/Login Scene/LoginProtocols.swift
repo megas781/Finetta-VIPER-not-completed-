@@ -9,56 +9,66 @@
 import UIKit
 import Firebase
 
-//MARK: - Отношения Presenter'a и View
-
-//Реализует view
-protocol LoginPresenterToViewProtocol {
-    var presenter: LoginViewToPresenterProtocol? { get set }
-    func showViewItemsViewController()
-    func showErrorAlert(withErrorDescription description: String)
+//Протоколы свойств
+protocol LoginPresenterPropertyProtocol: class {
+    weak var view: LoginViewInterfaceForPresenterProtocol? { get set }
+    var wireframe: LoginWireframeInterface? { get set }
+    var interactor: LoginInteractorInterfaceForPresenterProtocol? { get set }
+}
+protocol LoginViewPropertyProtocol: class {
+    var presenter: LoginPresenterInferfaceForViewProtocol? { get set }
+}
+protocol LoginInteractorPropertyProtocol: class {
+    weak var presenter: LoginPresenterInterfaceForInteractorProtocol? { get set }
 }
 
+//MARK: - Отношения Presenter'a и View
+
 //Реализует presenter
-protocol LoginViewToPresenterProtocol {
-    var view: LoginPresenterToViewProtocol? { get set }
+protocol LoginPresenterInferfaceForViewProtocol: class, LoginPresenterPropertyProtocol {
     
-    //запрашиваем роутер здесь, потому что view будет спрашивать presenter, чтобы тот обратился к router'у для создания модуля при переходах
-    var router: LoginPresenterToRouterProtocol? { get set }
     //Спрашивает залогиниться
     func login(withEmail email: String, password: String)
+    
+}
+
+//Реализует view
+protocol LoginViewInterfaceForPresenterProtocol: class, LoginViewPropertyProtocol {
+
+    func showErrorAlert(withErrorDescription description: String)
 }
 
 
 //MARK: - Отношения Presenter'a и Interactor'a
 
 //Реализует presenter
-protocol LoginInteractorToPresenterProtocol {
-    var interactor: LoginPresenterToInteractorProtocol? { get set }
+protocol LoginPresenterInterfaceForInteractorProtocol: class, LoginPresenterPropertyProtocol {
+    
     func authorizationSucceeded(name: String)
     func authorizationFailed(error: NSError)
+    
 }
 
 //Реализует Interactor
-protocol LoginPresenterToInteractorProtocol {
-    var presenter: LoginInteractorToPresenterProtocol? { get set }
+protocol LoginInteractorInterfaceForPresenterProtocol: class, LoginInteractorPropertyProtocol {
+    
     //в этом методе должна быть непосредственная работа с Firebase
     func authorize(withEmail email: String, password: String)
 }
 
 
-//MARK: - Presenter to Rounter only
-//protocol LoginPresenterPropertyRequirement {
-//    var router: LoginPresenterToRouterProtocol? { get set }
-//}
-protocol LoginPresenterToRouterProtocol {
+protocol LoginWireframeInterface: class {
+    
+    //Это свойство переоопределяется в каждом из методов типа create*Scene()
+    var currentViewController: UIViewController { get set }
+    
     func createLoginScene() -> LoginViewController
     //func createRegistrationScene() -> RegistrationViewController
-    
     
     //По-моему эти два метода придятся объединить, так как они оба состоят в tabbar controller'e и инициализируются одновременно
     
     func createMainScene() -> UITabBarController
     
-    //func createViewItemsScene() -> ViewItemsViewController
-    //func createSettingsScene() -> SettingsViewController
+    func performSegue(withIdentifier identifier: String, towards viewController: UIViewController)
+    
 }

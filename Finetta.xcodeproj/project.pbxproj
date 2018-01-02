@@ -21,13 +21,17 @@
 		EDFE460A1FFABBA8000DF65B /* VC+builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46091FFABBA8000DF65B /* VC+builder.swift */; };
 		EDFE460C1FFAC564000DF65B /* FirebaseInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460B1FFAC564000DF65B /* FirebaseInteractor.swift */; };
 		EDFE460E1FFAC5F1000DF65B /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460D1FFAC5F1000DF65B /* LoginInteractor.swift */; };
-		EDFE46101FFAC614000DF65B /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460F1FFAC614000DF65B /* LoginRouter.swift */; };
+		EDFE46101FFAC614000DF65B /* LoginWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE460F1FFAC614000DF65B /* LoginWireframe.swift */; };
 		EDFE46121FFAC7B8000DF65B /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46111FFAC7B8000DF65B /* LoginPresenter.swift */; };
 		EDFE46141FFAC7CB000DF65B /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46131FFAC7CB000DF65B /* LoginProtocols.swift */; };
 		EDFE46171FFB6619000DF65B /* ViewItemsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46161FFB6619000DF65B /* ViewItemsProtocols.swift */; };
 		EDFE46191FFB6741000DF65B /* ViewItemsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46181FFB6741000DF65B /* ViewItemsPresenter.swift */; };
 		EDFE461B1FFB674B000DF65B /* ViewItemsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE461A1FFB674B000DF65B /* ViewItemsInteractor.swift */; };
 		EDFE461D1FFB6759000DF65B /* ViewItemsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE461C1FFB6759000DF65B /* ViewItemsRouter.swift */; };
+		EDFE46201FFB9A3B000DF65B /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE461F1FFB9A3B000DF65B /* SettingsPresenter.swift */; };
+		EDFE46221FFB9A45000DF65B /* SettingsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46211FFB9A45000DF65B /* SettingsInteractor.swift */; };
+		EDFE46241FFB9A53000DF65B /* SettingsWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46231FFB9A53000DF65B /* SettingsWireframe.swift */; };
+		EDFE46261FFB9A59000DF65B /* SettingsProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE46251FFB9A59000DF65B /* SettingsProtocols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,13 +52,17 @@
 		EDFE46091FFABBA8000DF65B /* VC+builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VC+builder.swift"; sourceTree = "<group>"; };
 		EDFE460B1FFAC564000DF65B /* FirebaseInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInteractor.swift; sourceTree = "<group>"; };
 		EDFE460D1FFAC5F1000DF65B /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		EDFE460F1FFAC614000DF65B /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		EDFE460F1FFAC614000DF65B /* LoginWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireframe.swift; sourceTree = "<group>"; };
 		EDFE46111FFAC7B8000DF65B /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		EDFE46131FFAC7CB000DF65B /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
 		EDFE46161FFB6619000DF65B /* ViewItemsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsProtocols.swift; sourceTree = "<group>"; };
 		EDFE46181FFB6741000DF65B /* ViewItemsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsPresenter.swift; sourceTree = "<group>"; };
 		EDFE461A1FFB674B000DF65B /* ViewItemsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsInteractor.swift; sourceTree = "<group>"; };
 		EDFE461C1FFB6759000DF65B /* ViewItemsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewItemsRouter.swift; sourceTree = "<group>"; };
+		EDFE461F1FFB9A3B000DF65B /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		EDFE46211FFB9A45000DF65B /* SettingsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsInteractor.swift; sourceTree = "<group>"; };
+		EDFE46231FFB9A53000DF65B /* SettingsWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWireframe.swift; sourceTree = "<group>"; };
+		EDFE46251FFB9A59000DF65B /* SettingsProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsProtocols.swift; sourceTree = "<group>"; };
 		EFF83B3B731C94A1E130AAFB /* Pods-Finetta.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Finetta.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Finetta/Pods-Finetta.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				EDFE46131FFAC7CB000DF65B /* LoginProtocols.swift */,
-				EDFE460F1FFAC614000DF65B /* LoginRouter.swift */,
+				EDFE460F1FFAC614000DF65B /* LoginWireframe.swift */,
 				EDFE460D1FFAC5F1000DF65B /* LoginInteractor.swift */,
 				EDFE46111FFAC7B8000DF65B /* LoginPresenter.swift */,
 				ED4948011FFA8F210014C662 /* LoginViewController.swift */,
@@ -152,7 +160,7 @@
 			path = "Registration Scene";
 			sourceTree = "<group>";
 		};
-		EDC9F1F61FFA9FBF00612A2A /* View Items Scene */ = {
+		EDC9F1F61FFA9FBF00612A2A /* View Items SubScene */ = {
 			isa = PBXGroup;
 			children = (
 				EDFE46161FFB6619000DF65B /* ViewItemsProtocols.swift */,
@@ -161,15 +169,19 @@
 				EDFE46181FFB6741000DF65B /* ViewItemsPresenter.swift */,
 				EDC9F1F71FFAA24800612A2A /* ViewItemsViewController.swift */,
 			);
-			path = "View Items Scene";
+			path = "View Items SubScene";
 			sourceTree = "<group>";
 		};
-		EDC9F1F91FFAA2BA00612A2A /* Settings Scene */ = {
+		EDC9F1F91FFAA2BA00612A2A /* Settings SubScene */ = {
 			isa = PBXGroup;
 			children = (
+				EDFE46251FFB9A59000DF65B /* SettingsProtocols.swift */,
+				EDFE46231FFB9A53000DF65B /* SettingsWireframe.swift */,
+				EDFE46211FFB9A45000DF65B /* SettingsInteractor.swift */,
+				EDFE461F1FFB9A3B000DF65B /* SettingsPresenter.swift */,
 				EDC9F1FA1FFAA4DB00612A2A /* SettingsTableViewController.swift */,
 			);
-			path = "Settings Scene";
+			path = "Settings SubScene";
 			sourceTree = "<group>";
 		};
 		EDC9F1FC1FFAA56500612A2A /* Data Model */ = {
@@ -191,8 +203,8 @@
 		EDFE46151FFB6379000DF65B /* Main Scene */ = {
 			isa = PBXGroup;
 			children = (
-				EDC9F1F61FFA9FBF00612A2A /* View Items Scene */,
-				EDC9F1F91FFAA2BA00612A2A /* Settings Scene */,
+				EDC9F1F61FFA9FBF00612A2A /* View Items SubScene */,
+				EDC9F1F91FFAA2BA00612A2A /* Settings SubScene */,
 			);
 			path = "Main Scene";
 			sourceTree = "<group>";
@@ -336,6 +348,8 @@
 				EDFE460E1FFAC5F1000DF65B /* LoginInteractor.swift in Sources */,
 				ED4948021FFA8F210014C662 /* LoginViewController.swift in Sources */,
 				ED4948081FFA8F210014C662 /* Finetta.xcdatamodeld in Sources */,
+				EDFE46201FFB9A3B000DF65B /* SettingsPresenter.swift in Sources */,
+				EDFE46261FFB9A59000DF65B /* SettingsProtocols.swift in Sources */,
 				EDC9F1FB1FFAA4DB00612A2A /* SettingsTableViewController.swift in Sources */,
 				EDFE46121FFAC7B8000DF65B /* LoginPresenter.swift in Sources */,
 				EDC9F1F81FFAA24800612A2A /* ViewItemsViewController.swift in Sources */,
@@ -346,9 +360,11 @@
 				EDFE460A1FFABBA8000DF65B /* VC+builder.swift in Sources */,
 				EDFE46141FFAC7CB000DF65B /* LoginProtocols.swift in Sources */,
 				EDFE461B1FFB674B000DF65B /* ViewItemsInteractor.swift in Sources */,
-				EDFE46101FFAC614000DF65B /* LoginRouter.swift in Sources */,
+				EDFE46101FFAC614000DF65B /* LoginWireframe.swift in Sources */,
 				EDFE461D1FFB6759000DF65B /* ViewItemsRouter.swift in Sources */,
 				EDFE460C1FFAC564000DF65B /* FirebaseInteractor.swift in Sources */,
+				EDFE46241FFB9A53000DF65B /* SettingsWireframe.swift in Sources */,
+				EDFE46221FFB9A45000DF65B /* SettingsInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

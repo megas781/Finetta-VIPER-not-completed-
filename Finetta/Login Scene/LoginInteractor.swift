@@ -12,9 +12,9 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
-class LoginInteractor: LoginPresenterToInteractorProtocol {
+class LoginInteractor: LoginInteractorInterfaceForPresenterProtocol {
     
-    var presenter: LoginInteractorToPresenterProtocol?
+    weak var presenter: LoginPresenterInterfaceForInteractorProtocol?
     
     func authorize(withEmail email: String, password: String) {
         
@@ -23,13 +23,28 @@ class LoginInteractor: LoginPresenterToInteractorProtocol {
                 let error = error! as NSError
                 self.presenter?.authorizationFailed(error: error)
                 return
+            
             }
-            DispatchQueue.main.async {
-                print("бля, походу залогинился")
+            
+            guard let user = user else {
+                self.presenter?.authorizationFailed(error: NSError.init(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey:"User is equal to nil"]))
+                return
             }
+            
+            //Здесь мы знаем, что авторизация прошла успешно
+            
+            self.presenter?.authorizationSucceeded(name: user.email!)
+            
         }
         
     }
     
+    init() {
+        print("login interactor init")
+    }
+    
+    deinit {
+        print("login interactor deinit")
+    }
     
 }

@@ -10,10 +10,10 @@ import Foundation
 
 
 class ViewItemsInteractor {
-    var presenter: ViewItemsInteractorToPresenterProtocol?
+    var presenter: ViewItemsPresenterInterfaceForInteractorProtocol?
 }
 
-extension ViewItemsInteractor: ViewItemsPresenterToInteractorProtocol {
+extension ViewItemsInteractor: ViewItemsInteractorInterfaceForPresenterProtocol {
     
     
     

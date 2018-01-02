@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var mailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    var presenter: LoginViewToPresenterProtocol?
+    var presenter: LoginPresenterInferfaceForViewProtocol?
     
     
     override func viewDidLoad() {
@@ -59,16 +59,30 @@ class LoginViewController: UIViewController {
         self.passwordTextField.resignFirstResponder()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("prepareForSegue works!!")
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        print("login view controller aDecoder init")
+    }
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+        print("login view controller nib init")
+    }
+    
+    deinit {
+        print("login view controller deinit")
+    }
 }
 
 //presenter asks view
-extension LoginViewController: LoginPresenterToViewProtocol {
+extension LoginViewController: LoginViewInterfaceForPresenterProtocol {
     func showErrorAlert(withErrorDescription description: String) {
         self.presentErrorAlertController(withTitle: "Произошла ошибка", message: description)
     }
     
-    func showViewItemsViewController() {
-        let segue = UIStoryboardSegue.init(identifier: "fromLVCtoViewItemsSceneSegueIdentifier", source: self, destination: self.presenter?.router?.createMainScene())
-    }
+    
 }
 

@@ -10,11 +10,11 @@ import UIKit
 
 class ViewItemsTableViewController: UITableViewController {
     
-    var presenter: ViewItemsViewToPresenterProtocol?
+    var presenter: ViewPresenterInterfaceForViewProtocol?
     
 }
 
-extension ViewItemsTableViewController: ViewItemsPresenterToViewProtocol {
+extension ViewItemsTableViewController: ViewViewInterfaceForPresenterProtocol {
     
     
     
